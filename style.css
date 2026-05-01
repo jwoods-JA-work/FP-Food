@@ -101,7 +101,7 @@ body {
     position:absolute;
     width: 80px;
     height: auto;
-    right: 270px;
+    right: 250px;
     bottom: 130px;
     animation: heartbeat 1.5s infinite; /* Duration and repeat count */
     cursor: pointer;
