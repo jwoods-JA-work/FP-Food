@@ -117,9 +117,16 @@ body {
 }
 
 #click-note-screen {
+    /* Change 'cover' to 'contain' to ensure the full image fits */
     background-image: url('Images/kitchen-background2.png');
-    background-size: cover; 
+    background-size: contain; 
     background-position: center; 
+    background-repeat: no-repeat; 
+    
+    /* Pick a color from your image (like the floor or wall color) 
+       to fill the empty space around the image on tall screens */
+    background-color: #dcdcdc; 
+
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -127,7 +134,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    overflow: hidden; /* Prevents iPad wiggle */
+    overflow: hidden;
 }
 
 .click-note-card {
