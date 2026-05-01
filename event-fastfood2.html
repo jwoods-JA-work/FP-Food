@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Builder</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allan&family=Sanchez&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-directions-overlay">
+        <div class="directions-popup">
+            <h1>Burger Builder!</h1>
+            <ul class="mission-list">
+                <li>Memorize the <b>Order Note</b> quickly.</li>
+                <li>The note will disappear after 3 seconds!</li>
+                <li>Click the ingredients in the <b>exact</b> order.</li>
+                <li>Finish before time runs out to earn a <b>$5 bonus</b>!</li>
+            </ul>
+            <button id="start-minigame-btn" onclick="beginBurgerGame()">START SHIFT!</button>
+        </div>
+    </div>
+
+    <div id="burger-game-screen">
+        <div class="game-header">
+            <h2>Rush Hour: <span id="game-time">8</span>s</h2>
+            <h2>Budget: $<span id="game-budget">60</span></h2>
+        </div>
+
+        <div id="order-note">
+            <div class="tape"></div>
+            <h3>ORDER:</h3>
+            <div id="recipe-display">
+                </div>
+        </div>
+
+        <div id="assembly-tray">
+            <div id="current-burger">
+                </div>
+        </div>
+
+        <div class="ingredient-controls">
+            <button class="ing-btn" onclick="addIngredient('Bun')">🍞 Bun</button>
+            <button class="ing-btn" onclick="addIngredient('Meat')">🥩 Meat</button>
+            <button class="ing-btn" onclick="addIngredient('Cheese')">🧀 Cheese</button>
+            <button class="ing-btn" onclick="addIngredient('Lettuce')">🥬 Lettuce</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

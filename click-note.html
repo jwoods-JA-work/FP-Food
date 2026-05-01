@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Click Note On Fridge</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
+        <link href="https://googleapis.com" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="click-note-screen">
+            <div class = "click-note-card">
+                <h1>
+                    Your kitchen is almost empty. No groceries. No plan.
+                </h1>
+
+                <p>
+                    There is a note on the fridge. Click the note to read what it.
+                </p>
+
+                <img src = "Images/sticky-note.png" class = "sticky-note-button" onclick = "directionsPage()">
+            </div>
+        </div>
+
+        <div id = "directions-screen">
+            <div class = "directions-card">
+                <ul class="mission-list">
+                    <li>I had to leave quickly, but I set up a challenge for you.</li>
+                    <li>Each day you must choose how to eat:
+                        <ul>
+                            <li><strong>Groceries 🥦</strong> (cheap, lasts longer)</li>
+                            <li><strong>Fast Food 🍔</strong> (fast but costly over time)</li>
+                            <li><strong>Dining Out 🍽️</strong> (expensive but satisfying)</li>
+                        </ul>
+                    </li>
+                    <li> Make smart choice. Every decision affects your budget</li>
+                </ul>
+            </div>
+            
+            <img src = "Images/next.png" class = "next-button" onclick = "quizPage()">
+        </div>
+        <script src = "game.js"></script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Game 2</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allan&family=Sanchez&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="game-directions-overlay">
+        <div class="directions-popup">
+            <h1>Shelf Scavenger Hunt!</h1>
+            <ul class="mission-list">
+                <li>Look at your <b>Shopping List</b>.</li>
+                <li>Find and click those 3 items hidden on the busy shelf.</li>
+                <li><b>WARNING:</b> If you click junk food, you lose <b>$3</b> for an impulse buy!</li>
+                <li>You only have <b>10 Seconds</b> to find everything.</li>
+            </ul>
+            <button id="start-minigame-btn" onclick="beginScavengerHunt()">START SCANNING!</button>
+        </div>
+    </div>
+
+    <div id="scavenger-game-screen">
+        
+        <div class="game-header">
+            <h2>Time: <span id="game-time">10</span>s</h2>
+            <h2>Budget: $<span id="game-budget">60</span></h2>
+        </div>
+
+        <div id="shopping-list-note">
+            <div class="tape"></div>
+            <h3>Shopping List</h3>
+            <ul id="target-list-ui">
+                </ul>
+        </div>
+
+        <div id="shelf-board">
+            </div>
+
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
