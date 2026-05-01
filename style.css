@@ -68,9 +68,8 @@ body {
 }
 
 .mission-card {
-    width: 842px;
-    height: 488px;
-    padding: 20px 40px 60px 40px;
+    width: min(500px, 85vw);
+    padding: 40px 25px;
     background-color: rgba(252, 251, 231, 0.85);
     text-align: center;
     border-radius: 10px;
