@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fancy Garnish</title>
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-directions-overlay">
+        <div class="directions-popup">
+            <h1>The Fancy Garnish</h1>
+            <ul class="mission-list">
+                <li>The plate is sliding past you!</li>
+                <li>Tap to <b>DROP</b> the garnish.</li>
+                <li>Land it in the <b>CHEF'S CIRCLE</b> for a bonus.</li>
+                <li>If it hits the table, it's a <b>$10</b> disaster!</li>
+            </ul>
+            <button id="start-minigame-btn" onclick="beginGarnishGame()">START PLATING</button>
+        </div>
+    </div>
+
+    <div id="garnish-game-screen">
+        <div class="game-header">
+            <h2>Presentation Matters!</h2>
+            <h2>Budget: $<span id="game-budget">60</span></h2>
+        </div>
+
+        <div id="plating-area">
+            <div id="falling-garnish">🌿</div>
+            
+            <div id="moving-plate">
+                <div id="chefs-circle"></div>
+            </div>
+        </div>
+
+        <button id="drop-btn" onclick="dropGarnish()">DROP GARNISH</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

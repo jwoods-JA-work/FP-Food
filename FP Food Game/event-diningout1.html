@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tip Calculator</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allan&family=Sanchez&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="dining-game-screen">
+        
+        <div class="game-header">
+            <h2>Fancy Dining!</h2>
+            <h2>Budget: $<span id="game-budget">60</span></h2>
+        </div>
+
+        <div class="receipt">
+            <h3>GUEST CHECK</h3>
+            <p>------------------</p>
+            <p>1x Fancy Dinner.....$40.00</p>
+            <p>------------------</p>
+            <h2>TARGET TIP: 20%</h2>
+            <p>(Stop the slider in the green zone!)</p>
+        </div>
+
+        <div id="tip-game-container">
+            <div class="slider-labels">
+                <span>0%</span>
+                <span>15%</span>
+                <span>30%</span>
+            </div>
+            <div id="slider-track">
+                <div id="tip-target-zone"></div>
+                <div id="tip-pointer">👇</div>
+            </div>
+        </div>
+
+        <button id="stop-tip-btn" onclick="stopTipSlider()">STOP!</button>
+
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

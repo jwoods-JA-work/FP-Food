@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allan&family=Sanchez&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="day2-screen" class="choice-screen-layout">
+        
+        <div class="budget-sticky">
+            <div class="tape"></div>
+            <h2>Day 2/3</h2>
+            <h2 id="budget-display">Budget: <br>$60</h2> 
+        </div>
+
+        <div class="prompt-box">
+            <div class="prompt-tape"></div>
+            <p>Welcome to Day 2! You survived yesterday, but you still need to eat. Make your choice.</p>
+        </div>
+
+        <div class="cards-container">
+            
+            <div class="food-card">
+                <div class="image-box">
+                    <img src="Images/groceries.png" alt="Groceries">
+                </div>
+                <h2>Groceries</h2>
+                <h3>Price: $20</h3>
+                <button class="buy-btn" onclick="makeChoice2('groceries', 20)">BUY</button>
+            </div>
+
+            <div class="food-card">
+                <div class="image-box">
+                    <img src="Images/fastfood.png" alt="Fast Food">
+                </div>
+                <h2>Fast Food</h2>
+                <h3>Price: $15</h3>
+                <button class="buy-btn" onclick="makeChoice2('fastfood', 15)">BUY</button>
+            </div>
+
+            <div class="food-card">
+                <div class="image-box">
+                    <img src="Images/diningout.png" alt="Dining Out">
+                </div>
+                <h2>Dining Out</h2>
+                <h3>Price: $30</h3>
+                <button class="buy-btn" onclick="makeChoice2('diningout', 30)">BUY</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

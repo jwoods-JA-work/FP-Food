@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance the Tray</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allan&family=Sanchez&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-directions-overlay">
+        <div class="directions-popup">
+            <h1>Balance the Tray!</h1>
+            <ul class="mission-list">
+                <li>Keep your <b>Mouse Cursor</b> inside the moving green circle.</li>
+                <li>If you stay outside the circle for too long, the tray falls!</li>
+                <li>Hold steady for <b>10 Seconds</b> to win.</li>
+                <li><b>WARNING:</b> Dropping the tray costs <b>$10</b>!</li>
+            </ul>
+            <button id="start-minigame-btn" onclick="beginBalanceGame()">START SERVING!</button>
+        </div>
+    </div>
+
+    <div id="balance-game-screen">
+        <div class="game-header">
+            <h2>Steady... <span id="game-time">10</span>s</h2>
+            <h2>Budget: $<span id="game-budget">60</span></h2>
+        </div>
+
+        <div id="tray-surface">
+            <div id="balance-zone">
+                <div class="inner-circle"></div>
+            </div>
+            
+            <div class="tray-food">🍽️🍷</div>
+        </div>
+        
+        <p class="game-hint">Keep your cursor in the green circle!</p>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
