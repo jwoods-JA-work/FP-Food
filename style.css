@@ -120,13 +120,14 @@ body {
     background-image: url('Images/kitchen-background2.png');
     background-size: cover; 
     background-position: center; 
-    background-repeat: no-repeat; 
-    width:100vw;
+    width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden; /* Prevents iPad wiggle */
 }
 
 .click-note-card {
