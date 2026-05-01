@@ -18,9 +18,8 @@ body {
 /* Make the card large and styled */
 .start-card {
     /* Sizing from the travel game */
-    width: 770px;
-    height: 358px;
-    padding: 20px 40px 60px 40px;
+    width: min(500px, 85vw);
+    padding: 40px 25px;
     background-color: rgba(252, 251, 231, 0.85);
     text-align: center;
     border-radius: 10px;
