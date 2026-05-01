@@ -974,7 +974,7 @@ function nextSortItem() {
         isSortActive = false;
         finishDay3("Shift over! You sorted your groceries.");    
     } else {
-        itemSpeed += 0.4; // Slightly faster
+        itemSpeed += 0.2; // Slightly faster
         spawnSortItem();
     }
 }
