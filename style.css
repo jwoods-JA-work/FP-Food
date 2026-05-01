@@ -164,8 +164,8 @@ body {
     position: absolute;
     width: 100px;
     height: auto;
-    right: 140px;
-    top: 450px;
+    right: 110px;
+    top: 470px;
     animation: heartbeat 1.5s infinite; /* Duration and repeat count */
     cursor: pointer;
 }
