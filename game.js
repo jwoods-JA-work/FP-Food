@@ -872,7 +872,7 @@ function checkBudgetStatus() {
 let sortItemsLeft = 10;
 let isSortActive = false;
 let currentItemType = ""; 
-let itemSpeed = 15;
+let itemSpeed = 20;
 
 // Matches HTML: onclick="beginSortGame()"
 function beginSortGame() {
@@ -881,7 +881,7 @@ function beginSortGame() {
 
     sortItemsLeft = 10;
     isSortActive = true;
-    itemSpeed = 30;
+    itemSpeed = 20;
     
     updateSortUI();
     spawnSortItem();
